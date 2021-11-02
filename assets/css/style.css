@@ -1,0 +1,104 @@
+/* Setting Universal Attributes & Variables */
+:root {
+  --main-color: #c3ceda;
+  --secondary-color: #738fa7;
+  --tertiary-color: #f7b49d;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 1em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #071330;
+  line-height: 1.5;
+}
+
+body {
+  background-color: var(--main-color);
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  color: var(--main-color);
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+p,
+ul {
+  font-size: 1.25em;
+}
+
+section {
+  margin: 25px 0 0 0;
+}
+
+article {
+  padding: 20px;
+}
+
+/* # Header */
+header {
+  background-color: var(--secondary-color);
+  padding: 25px;
+}
+
+/* ##Nav Bar */
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-item {
+  padding: 0.5% 0.75%;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+#navbar a:hoven {
+  color: #86c232;
+}
+
+.nav-item {
+  font-size: 2rem;
+}
+
+/* # Main */
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+/* ## About Dylan */
+#about-dylan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* #about-sidebar {
+  background-image: url("../images/120199701_10224234672760919_8683538346560329996_n.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+
+#about-sidebar,
+#about-content {
+  width: 50%;
+}
+
+#about-content p + ul {
+  margin-bottom: 0;
+}
