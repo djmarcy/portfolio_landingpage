@@ -20,6 +20,14 @@ body {
   margin: 0;
 }
 
+hr {
+  width: 66%;
+  margin: 25px auto;
+  background-color: var(--secondary-color);
+  border: none;
+  height: 3px;
+}
+
 h1 {
   margin-top: 0;
   text-align: center;
@@ -29,7 +37,13 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
-  margin: 10px 0;
+  margin: 10px 25px 0px 0px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h3 {
+  text-align: center;
 }
 
 p,
@@ -45,10 +59,13 @@ article {
   padding: 20px;
 }
 
+
 /* # Header */
 header {
   background-color: var(--secondary-color);
   padding: 25px;
+
+  background-image: url()
 }
 
 /* ##Nav Bar */
@@ -75,11 +92,13 @@ header {
   font-size: 2rem;
 }
 
+
 /* # Main */
 main {
   width: 90%;
   margin: 0 auto;
 }
+
 /* ## About Dylan */
 #about-dylan {
   display: flex;
@@ -87,18 +106,133 @@ main {
   justify-content: center;
 }
 
-/* #about-sidebar {
-  background-image: url("../images/120199701_10224234672760919_8683538346560329996_n.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
-
 #about-sidebar,
 #about-content {
   width: 50%;
 }
 
+#about-content h2 {
+  text-align: right;
+}
+
+#about-content p {
+  align-self: center;
+}
+
+.about-img {
+  max-width:100%;
+  max-height: 600px;
+}
+
 #about-content p + ul {
   margin-bottom: 0;
 }
+
+/* ## Portfolio */
+/* ### Highlighted Project */
+#portfolio-highlight {
+  position: relative;
+  width: 750px;
+  height: 750px;
+  max-width: 100%;
+  max-height: 100%;
+  border: 15px solid var(--secondary-color);
+  margin: 25px auto 0;
+  opacity: 66%;
+  transition: .25s ease-in-out;
+  text-align: center;
+}
+
+#portfolio-highlight:hover {
+  opacity: 100%;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.portfolio-img1 {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.highlighted-project {
+  position: absolute;
+  left: -1px;
+  top: 40%;
+  width: 40%;
+  height: 20%;
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+  transition-property: left;
+  transition: .25s ease-in-out;
+  font-size: 2.5rem;
+}
+
+#portfolio-highlight:hover .highlighted-project {
+  transition: .25s ease-in-out;
+  transition-duration: .25s;
+  left: 33%;
+}
+
+/* ### Project Cards */
+
+
+/* ## Contact */
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contact-info {
+  width: 40%;
+  border: 7.5px solid var(--secondary-color);
+  margin: 15px 0;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+/* # Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  font-size: 1.15rem;
+  text-align: center;
+  height: 100px;
+}
+
+.copyright-txt {
+  align-self: center;
+}
+
+
+/* # Media Queries */
+@media screen and (max-width: 1366px) {
+ 
+h2 {
+  text-align: center;
+}
+
+#about-dylan {
+  flex-direction: column;
+}
+
+ #about-content,
+  #about-sidebar {
+    width: 100%;
+  }
+
+  #about-sidebar {
+    order: 0;
+    margin: 0 auto;
+  }
+
+  #about-content {
+    order: 1;
+  }
+}
+
+/* 
+@media screen and (max-width: ) {
+
+} */
