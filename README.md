@@ -1,29 +1,32 @@
 # Portfolio Landing Page
 
 ## Description
-Code refactor for Horiseon website to bring it in line with HTML & CSS best-practices.  Alterations include:
-  - Replacement of container divs with semantic tags to aid readability
-  - Improving accessibility by adding alt-tags to images
-  - Cleaning up duplicate CSS code
-  - Reformatting/commenting out style.css stylesheet
-  - Improved responsivity by making hero image an image instead of a background image of a static-sized container
 
-Applied Scout's Rule by cleaning up existing code where applicable.
+Portfolio landing page which included the following:
+
+- About Me section with short bio and picture
+- Portfolio with highlighted project and collection of others
+- "Other Services" section
+- Contact form
 
 ## Visuals
-![Horiseon Top Half Photo](./assets/images/horiseon_top.png)
 
-![Horiseon Bottom Half Photo](./assets/images/horiseon_bottom.png)
+![About Me](./assets/images/about_dylan.png)
 
-![Noted CSS](./assets/images/css_noted.png)
+![Portfolio](./assets/images/portfolio.png)
 
-## Installation 
+![Other Service & Contact](./assets/images/other_services_and_contact.png)
+
+## Installation
+
 Download to single directory & run index.html.
 
 ## Credits
-All credit goes to me. Muahaha!
+
+Thank you, Zach, for helping me figure out why my About Me image wouldn't load!
 
 ## License
+
 MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
