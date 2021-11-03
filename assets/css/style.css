@@ -133,10 +133,7 @@ main {
 #portfolio-highlight {
   position: relative;
   width: 750px;
-  height: 750px;
   max-width: 100%;
-  max-height: 100%;
-  border: 15px solid var(--secondary-color);
   margin: 25px auto 0;
   opacity: 66%;
   transition: .25s ease-in-out;
@@ -155,24 +152,38 @@ main {
 
 .highlighted-project {
   position: absolute;
-  left: -1px;
-  top: 40%;
+  top: 0;
+  left:30%;
   width: 40%;
   height: 20%;
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
-  transition-property: left;
-  transition: .25s ease-in-out;
+  transition: top .25s ease-in-out;
   font-size: 2.5rem;
 }
 
-#portfolio-highlight:hover .highlighted-project {
-  transition: .25s ease-in-out;
-  transition-duration: .25s;
-  left: 33%;
+/* ### Project Cards */
+.portfolio-slides {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-/* ### Project Cards */
+.portfolio-title {
+  display:block;
+}
+
+.slide-cards {
+  width: 45%;
+  height: 45%;
+  padding: 10px solid var(--secondary-color);
+}
+
+.slide-cards img {
+  width: 100%;
+}
+
+/* ## Other Work */
 
 
 /* ## Contact */
